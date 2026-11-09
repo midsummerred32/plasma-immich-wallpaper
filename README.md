@@ -31,6 +31,27 @@ Then right-click the desktop → **Configure Desktop and Wallpaper** → set **W
 
 To remove it: `./uninstall.sh`.
 
+## Updating
+
+If you installed from a `git clone`, update with:
+
+```sh
+./update.sh
+kquitapp6 plasmashell && kstart plasmashell
+```
+
+To check for updates automatically every day (systemd user timer):
+
+```sh
+./enable-autoupdate.sh      # turn on
+./disable-autoupdate.sh     # turn off
+```
+
+When a new version is installed you get a desktop notification. The new code only takes effect after Plasma restarts
+(`kquitapp6 plasmashell && kstart plasmashell`, or log out and back in); the plugin never restarts your desktop on its own.
+
+Auto-update installs whatever is on the `main` branch of your clone's remote, so only use it with a repository you trust.
+
 ## Setup
 
 1. Enter your Immich server URL (for example `http://192.168.1.10:2283`) and your API key
