@@ -1,0 +1,14 @@
+{
+    "KPlugin": {
+        "Authors": [{ "Name": "Trevor Leavitt" }],
+        "Description": "Slideshow wallpaper from selected Immich albums",
+        "Icon": "preferences-desktop-wallpaper",
+        "Id": "org.local.immichwallpaper",
+        "License": "MIT",
+        "Name": "Immich Album Slideshow",
+        "Version": "1.6",
+        "Website": "https://github.com/midsummerred32/plasma-immich-wallpaper"
+    },
+    "KPackageStructure": "Plasma/Wallpaper",
+    "X-Plasma-API-Minimum-Version": "6.0"
+}
